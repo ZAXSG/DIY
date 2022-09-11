@@ -6,7 +6,7 @@ num=$(find $CURRENT_DIR -name gradlew  | awk -F"/" '{print NF-1}')
 DIR=$(find $CURRENT_DIR -name gradlew  | cut -d \/ -f$num)
 cd $CURRENT_DIR/$DIR
 #xwalk修复
-sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/cai512\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
+#sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/cai512\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
 #共存修改
 #sed -i 's/tvbox.osc/tvbox.osc.tk/g' $CURRENT_DIR/$DIR/app/src/main/AndroidManifest.xml
 #名称修改
