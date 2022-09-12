@@ -10,9 +10,9 @@ sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.g
 #共存修改
 #sed -i 's/tvbox.osc/tvbox.osc.jy/g' $CURRENT_DIR/$DIR/app/src/main/AndroidManifest.xml
 #名称修改
-sed -i 's/TVBox/爱奇优TV/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
+#sed -i 's/TVBox/爱奇优TV/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
 #背景修改
-mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
+#mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
 #取消选集全屏
 sed -i 's/if (showPreview \&\& !fullWindows) toggleFullPreview/\/\/if (showPreview \&\& !fullWindows) toggleFullPreview/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
 #缩略图清晰度修改
