@@ -34,6 +34,9 @@ cp $CURRENT_DIR/Logo/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xx
 cp $CURRENT_DIR/Logo/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xxxhdpi/app_icon.png
 #背景修改
 mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
+#添加Fongmi的jar支持
+echo "" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
+echo "-keep class com.google.gson.**{*;}" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
 #xwalk修复
 #sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/lm317379829\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
 #添加PY支持
